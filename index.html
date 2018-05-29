@@ -8,23 +8,21 @@
 </head>
 
 <body>
-<header>
-	<div class="wrapper">
-		<nav class="smooth-scroll">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#"><img src="img/logo.png" alt="logo"/></a></li>
-				<li><a href="#products">Products</a></li>
-				<li><a href="#contact">Contact Us</a></li>
-			</ul>
-		</nav>
-	</div>
-	<div id="bg-aqua">
+<header id="bg-aqua">
+	<div id="bg-white">
 		<div class="wrapper">
-			<p id="heading">Try Our Signature Cupcake</p>
+			<nav class="smooth-scroll">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#"><img src="img/logo.png" alt="logo"/></a></li>
+					<li><a href="#products">Products</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+				</ul>
+			</nav>
 		</div>
 	</div>
+	<p id="heading">Try Our Signature Cupcake</p>
 </header>
 <section id="about">
 	<div class="wrapper">
@@ -48,7 +46,7 @@
 				<header>
 					<h2>Hours</h2>
 				</header>
-				<ul><!--change the bullets to cherries-->
+				<ul id="cherries">
 					<li>Monday &ndash; Friday</li>
 					<li><time datetime="08:00">8:00 AM</time> &ndash; <time datetime="19:00">7:00 PM</time></li>
 					<li>Saturday</li>
@@ -67,7 +65,8 @@
 			<p>We have something for every craving, celebration and occasion. We also offer several allergen free options.</p>
 		</header>
 		<div class="row">
-			<div id="col-4" class="circle">
+			<div id="col-4">
+			<div id="circle-one"></div>
 				<header>
 					<h3>Signature Cupcakes</h3>
 				</header>
@@ -75,6 +74,7 @@
 				<p class="btn"><a href="#">Order Now</a></p>
 			</div>
 			<div id="col-5">
+			<div id="circle-two"></div>
 				<header>
 					<h3>Allergen Free</h3>
 				</header>
@@ -82,6 +82,7 @@
 				<p class="btn"><a href="#">Order Now</a></p>
 			</div>
 			<div id="col-6">
+				<div id="circle-three"></div>
 				<header>
 					<h3>Vegan</h3>
 				</header>
@@ -92,7 +93,7 @@
 	</div>
 </section>
 <section>
-	<div class="wrapper">
+	<div class="wrapper" id="flavors">
 		<header>
 			<h2 id="daily">Daily Flavors</h2>
 		</header>
@@ -168,21 +169,21 @@
 			<caption>Prices</caption>
 			<thead>
 				<tr>
-					<th colspan="1">Individual</th>
+					<th rowspan="1">Individual</th>
 					<th>One Dozen</th>
 					<th>Two Dozen</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
-					<td colspan="1">$1.25</td>
+					<td rowspan="1">$1.25</td>
 					<td>$13.00</td>
 					<td>$2.00 Off</td>
 				</tr>
 				<tr>
 					<td>Regular</td>
 					<td>$2.50</td>
-					<td colspan="1">$27.50</td>
+					<td rowspan="1">$27.50</td>
 				</tr>
 				<tr>
 					<td>Jumbo</td>
@@ -216,9 +217,8 @@
 					<option value="graduation">Graduation</option>
 					<option value="custom">Customize</option>
 				</select>
-				<div>
+				<div class="row">
 					<p>Quanity</p>
-					<div class="row">
 						<div id="c-4">
 							<label for="individual">Individual</label>
 							<input id="individual" type="radio" name="individual" value="individual">
@@ -232,19 +232,16 @@
 							<input id="two-dozen" type="radio" name="two-dozen" value="two-dozen">
 						</div>
 					</div>
-				</div>
 				<div>
 					<p>Flavor</p>
 					<div class="row">
-						<div>
-							<div id="c-1">
-								<label for="wedding">Wedding</label>
-								<input id="wedding" type="checkbox" name="wedding" value="wedding">
-								<label for="red">Go big red</label>
-								<input id="red" type="checkbox" name="red" value="red">
-								<label for="signature">Signature</label>
-								<input id="signature" type="checkbox" name="signature" value="signature">
-							</div>
+						<div id="c-1">
+							<label for="wedding">Wedding</label>
+							<input id="wedding" type="checkbox" name="wedding" value="wedding">
+							<label for="red">Go big red</label>
+							<input id="red" type="checkbox" name="red" value="red">
+							<label for="signature">Signature</label>
+							<input id="signature" type="checkbox" name="signature" value="signature">
 						</div>
 						<div>
 							<div id="c-2">
@@ -290,7 +287,6 @@
 	<div class="wrapper">
 		<div class="row">
 			<div id="col-11">
-				
 				<h5>Real Fake Authentic</h5>
 				<p>specialty bakery dedicated to creating and baking several different sweet treats.</p>
 			</div>

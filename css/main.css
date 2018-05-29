@@ -48,7 +48,7 @@ h1, h2, h3{
 h2, h3, h4, h5, p{
 	font-family: helvetica, Arial, sans-serif;
 }
-h3{
+h3, .btn a, nav ul li a{
 	text-transform: uppercase;
 }
 h4{
@@ -58,26 +58,42 @@ h4{
 p{
 	font-size: 12px;
 }
-#bg-pink p:first-child{
+#bg-pink p:first-child, nav ul li, .btn, nav, #products p, #contact p, table, form {
 	text-align: center;
 }
+#heading{
+	padding: 359px 0 0 196px;
+	
+}
+
 /* 1.3 Buttons */
 .btn{
 	width: 100px;
-	text-align: center;
 	padding: 10px;
 }
-.btn a{
+.btn a, #tele, nav ul li a{
 	text-decoration: none;
-	text-transform: uppercase;
 }
 /* 1.4 form */
+form{
+	display: inline-block;
+	padding: 10px;
+}
+label{
+	text-align: left;
+}
+input{
+	margin: 0 auto;
+}
 textarea{
 	margin: 0;
 	height: 183px;
 	width: 470px;
 }
-
+/* 1.5 tables */
+table{
+	margin: 0 auto;
+}
 
 
 
@@ -92,25 +108,16 @@ textarea{
 
 -------------------------------------------------------------- */
 nav ul li{
-	display: inline;
+	display: inline-block;
 	padding-left: 10px;
-	text-align: center;
 }
 nav ul li a{
-	text-decoration: none;
 	color: #432920;
-	text-transform: uppercase;
-	
 }
 
 nav{
 	position: fixed;
-	background-color: #fff;
 	font-family: Helvetica, Arial sans-serif;
-}
-
-nav ul{
-	list-style: url(../img/cherry.png);
 }
 
 /*--------------------------------------------------------------
@@ -145,6 +152,9 @@ nav ul{
 #col-4, #col-5, #col-6{
 	width: 293px;
 }
+#col-4, #col-5{
+	padding-right: 175px;
+}
 #col-7, #col-8, #column-1, #column-2{
 	width: 270px;
 }
@@ -169,19 +179,31 @@ nav ul{
 #bg-pink{
 	padding: 15px;
 }
-.circle{
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	-ms-border-radius: 50%;
-	border-radius: 50%;
-	background-color: #fff;
+#circle-one, #circle-two, #circle-three{
+	width: 180px;
+	height: 180px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+	-ms-border-radius: 100px;
+	border-radius: 100px;
 }
 #bg-aqua{
 	padding-top: 30px;
 }
-#tele{
-	text-decoration: none;
+#bg-white nav{
+	height: 115px;
+	width: 1300px;
+}
+#cherries{
+	list-style: url(../img/cherry.png);
+	padding-left: 140px;
+}
+#products, #flavors, #contact{
+	padding: 20px;
+}
+#col-9{
+	padding-right: 146px;
 }
 /*--------------------------------------------------------------
 
@@ -195,7 +217,7 @@ footer ul{
 footer ul span{
 	display: none;
 }
-footer ul a{
+footer ul li a{
 	width: 25px;
 	height: 25px;
 }
@@ -222,17 +244,17 @@ footer ul li a:last-child{
 	}
 /*4.2 background images */
 #bg-aqua{
-	background: url(../img/hero.jpg) no-repeat 0 0;
+	background: url(../img/hero.jpg) no-repeat center;
 }
 
-#col-4{
-	background: url(../img/product-one.png) no-repeat 0 0;
+#circle-one{
+	background: url(../img/product-one.png) no-repeat center;
 }
-#col-5{
-	background: url(../img/product-two.png) no-repeat 0 0;
+#circle-two{
+	background: url(../img/product-two.png) no-repeat center;
 }
-#col-6{
-	background: url(../img/product-three.png) no-repeat 0 0;
+#circle-three{
+	background: url(../img/product-three.png) no-repeat center;
 }
 
 
@@ -269,4 +291,10 @@ h1, #heading{
 }
 #tele:hover{
 	color: #a7e6e0;
+}
+#bg-white nav, #circle-one, #circle-two, #circle-three{
+	background-color: #fff;
+}
+#heading p{
+	background-color: rgba(255,255,255,0.50);
 }
