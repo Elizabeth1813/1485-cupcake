@@ -37,7 +37,7 @@
 
 -------------------------------------------------------------- */
 /* 1.1 Headings */
-h1, #heading{
+h1, header p{
 	font-family: 'Dancing Script', cursive;
 	font-size: 30px;
 	
@@ -59,17 +59,18 @@ h4{
 p{
 	font-size: 12px;
 }
-#bg-pink p:first-child, nav ul li, .btn, nav, #products p, table, form, h1, h2, h3 {
+#bg-pink p:first-child, nav ul li, .btn, nav, #products p, table, h1, h2, h3{
 	text-align: center;
 }
-#heading{
-	padding: 359px 0 0 196px;
+header p{
+	margin: 359px 0 0 196px;
+	width: 350px;
+	padding: 10px;
 	
 }
 #contact p{
 	text-align: left;
 }
-
 /* 1.3 Buttons */
 .btn{
 	width: 100px;
@@ -81,6 +82,9 @@ p{
 /* 1.4 form */
 form{
 	padding: 10px;
+}
+label, input{
+	display:  block;
 }
 textarea{
 	margin: 0;
@@ -130,7 +134,7 @@ nav{
 
 -------------------------------------------------------------- */
 /* 3.1 Site Structure */
-.wrapper, #circle-one, #circle-two, #circle-three, table, input, h1, #col-4 p:last-child, #col-5 p:last-child, #col-6 p:last-child, #contact p:last-child{
+.wrapper, #circle-one, #circle-two, #circle-three, table, form, h1, #col-4 p:last-child, #col-5 p:last-child, #col-6 p:last-child, #contact p:last-child{
 	margin: 0 auto;
 }
 .wrapper{
@@ -194,7 +198,7 @@ div [id*="column-"]{
 #bg-aqua{
 	padding-top: 30px;
 }
-#bg-white nav{
+#bg-white{
 	height: 115px;
 	width: 1300px;
 }
@@ -278,7 +282,7 @@ footer ul li a:last-child{
 	background-color: #a7e6e0;
 }
 
-h1, #heading{
+h1, header p{
 	color: #c92020;
 }
 #products{
@@ -299,9 +303,9 @@ h1, #heading{
 #tele:hover{
 	color: #a7e6e0;
 }
-#bg-white nav, #circle-one, #circle-two, #circle-three{
+#bg-white, #circle-one, #circle-two, #circle-three{
 	background-color: #fff;
 }
-#heading p{
-	background-color: rgba(255,255,255,0.50);
+header p{
+	background-color: rgba(255,255,255,.40);
 }
